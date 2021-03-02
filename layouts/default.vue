@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app light>
     <v-navigation-drawer
       v-model="drawer"
       :mini-variant="miniVariant"
@@ -42,9 +42,7 @@
       </v-btn>
     </v-app-bar>
     <v-main>
-      <v-container>
-        <nuxt />
-      </v-container>
+      <nuxt />
     </v-main>
     <v-navigation-drawer v-model="rightDrawer" :right="right" temporary fixed>
       <v-list>
@@ -82,9 +80,9 @@ export default {
         },
       ],
       miniVariant: false,
-      right: true,
+      right: false,
       rightDrawer: false,
-      title: 'Vuetify.js',
+      title: 'Med Guide',
     }
   },
 }
